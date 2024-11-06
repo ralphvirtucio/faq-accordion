@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png" />
+    <link
+      rel="stylesheet"
+      href="style.css" />
+    <script
+      src="index.js"
+      defer></script>
+    <title>Frontend Mentor | FAQ accordion</title>
+  </head>
+  <body>
+    <main>
+      <div class="title">
+        <img
+          src="./assets/images/icon-star.svg"
+          alt="Star Icon" />
+        <h1>FAQs</h1>
+      </div>
+
+      <div
+        id="accordionGroup"
+        class="accordion">
+        <!-- FIRST ACCORDION -->
+       <div class="faq">
+        <h2>
+          <button
+            type="button"
+            aria-expanded="true"
+            class="accordion-trigger"
+            aria-controls="faq1"
+            id="accordion1id">
+            <div class="accordion-title__container">
+              <span class="accordion-title__text">
+                What is Frontend Mentor, and how will it help me
+              </span>
+              <span
+                class="accordion-icon"
+                id="hide-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="31"
+                  fill="none"
+                  viewBox="0 0 30 31"
+                  aria-hidden="true"
+                  aria-label="Hide Content">
+                  <path
+                    fill="#301534"
+                    d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.2 12.2 0 0 0 15 3.312Zm4.688 13.124h-9.375a.938.938 0 0 1 0-1.875h9.374a.938.938 0 0 1 0 1.876Z" />
+                </svg>
+              </span>
+              <span
+                class="accordion-icon"
+                id="show-icon"
+                hidden>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="31"
+                  fill="none"
+                  viewBox="0 0 30 31"
+                  aria-hidden="true"
+                  aria-label="Show Content">
+                  <path
+                    fill="#AD28EB"
+                    d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z" />
+                </svg>
+              </span>
+            </div>
+          </button>
+        </h2>
+        <div
+          id="faq1"
+          role="region"
+          aria-labelledby="accordion1id"
+          class="accordion-panel">
+          <p>
+            Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills
+            with projects in HTML, CSS, and JavaScript. It’s suitable for all levels and ideal for portfolio building.
+          </p>
+        </div>
+       </div>
+        <!-- FIRST ACCORDION -->
+
+        <!-- SECOND ACCORDION -->
+       <div class="faq">
+        <h2>
+          <button
+            type="button"
+            aria-expanded="false"
+            class="accordion-trigger"
+            aria-controls="faq2"
+            id="accordion2id">
+            <div class="accordion-title__container">
+              <span class="accordion-title__text">Is Frontend Mentor free?</span>
+              
+              <span
+                class="accordion-icon"
+                id="hide-icon"
+                hidden>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="31"
+                  fill="none"
+                  viewBox="0 0 30 31"
+                  aria-hidden="true"
+                  aria-label="Hide Content">
+                  <path
+                    fill="#301534"
+                    d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.2 12.2 0 0 0 15 3.312Zm4.688 13.124h-9.375a.938.938 0 0 1 0-1.875h9.374a.938.938 0 0 1 0 1.876Z" />
+                </svg>
+              </span>
+              <span
+                class="accordion-icon"
+                id="show-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="31"
+                  fill="none"
+                  viewBox="0 0 30 31"
+                  aria-hidden="true"
+                  aria-label="Show Content">
+                  <path
+                    fill="#AD28EB"
+                    d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z" />
+                </svg>
+              </span>
+            </div>
+          </button>
+        </h2>
+        <div
+          id="faq2"
+          role="region"
+          aria-labelledby="accordion2id"
+          class="accordion-panel"
+          hidden>
+          <p>
+            Yes, Frontend Mentor offers both free and premium coding challenges, with the free option providing access
+            to a range of projects suitable for all skill levels.
+          </p>
+        </div>
+       </div>
+        <!-- SECOND ACCORDION -->
+
+        <!-- THIRD ACCORDION -->
+        <div class="faq">
+          <h2>
+            <button
+              type="button"
+              aria-expanded="false"
+              class="accordion-trigger"
+              aria-controls="faq3"
+              id="accordion3id">
+              <div class="accordion-title__container">
+                <span class="accordion-title__text"> Can I use Frontend Mentor projects in my portfolio? </span>
+                <span
+                  class="accordion-icon"
+                  id="hide-icon"
+                  hidden>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="31"
+                    fill="none"
+                    viewBox="0 0 30 31"
+                    aria-hidden="true"
+                    aria-label="Hide Content">
+                    <path
+                      fill="#301534"
+                      d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.2 12.2 0 0 0 15 3.312Zm4.688 13.124h-9.375a.938.938 0 0 1 0-1.875h9.374a.938.938 0 0 1 0 1.876Z" />
+                  </svg>
+                </span>
+                <span
+                  class="accordion-icon"
+                  id="show-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="31"
+                    fill="none"
+                    viewBox="0 0 30 31"
+                    aria-hidden="true"
+                    aria-label="Show Content">
+                    <path
+                      fill="#AD28EB"
+                      d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z" />
+                  </svg>
+                </span>
+              </div>
+            </button>
+          </h2>
+          <div
+            id="faq3"
+            role="region"
+            aria-labelledby="accordion3id"
+            class="accordion-panel"
+            hidden>
+            <p>
+              Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent way to showcase
+              your skills to potential employers!
+            </p>
+          </div>
+        </div>
+        <!-- THIRD ACCORDION -->
+
+        <!-- FOURTH ACCORDION -->
+       <div class="faq">
+        <h2>
+          <button
+            type="button"
+            aria-expanded="false"
+            class="accordion-trigger"
+            aria-controls="faq4"
+            id="accordion4id">
+            <div class="accordion-title__container">
+              <span class="accordion-title__text">How can I get help if I'm stuck on a Frontend Mentor challenge?</span>
+              <span
+                class="accordion-icon"
+                id="hide-icon"
+                hidden>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="31"
+                  fill="none"
+                  viewBox="0 0 30 31"
+                  aria-hidden="true"
+                  aria-label="Hide Content">
+                  <path
+                    fill="#301534"
+                    d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.2 12.2 0 0 0 15 3.312Zm4.688 13.124h-9.375a.938.938 0 0 1 0-1.875h9.374a.938.938 0 0 1 0 1.876Z" />
+                </svg>
+              </span>
+              <span
+                class="accordion-icon"
+                id="show-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="31"
+                  fill="none"
+                  viewBox="0 0 30 31"
+                  aria-hidden="true"
+                  aria-label="Show Content">
+                  <path
+                    fill="#AD28EB"
+                    d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z" />
+                </svg>
+              </span>
+            </div>
+          </button>
+        </h2>
+        <div
+          id="faq4"
+          role="region"
+          aria-labelledby="accordion4id"
+          class="accordion-panel"
+          hidden>
+          <p>
+            The best place to get help is inside Frontend Mentor's Discord community. There's a help channel where you
+            can ask questions and seek support from other community members
+          </p>
+        </div>
+       </div>
+        <!-- FOURTH ACCORDION -->
+      </div>
+    </main>
+  </body>
+</html>
