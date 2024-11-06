@@ -6,8 +6,8 @@ class Accordion {
   constructor(node) {
     this.rootEl = node
     this.buttonEl = this.rootEl.querySelector('button[aria-expanded]');
-    this.showEl = this.rootEl.querySelector('#show-icon')
-    this.hideEl = this.rootEl.querySelector('#hide-icon')
+    this.showEl = this.rootEl.querySelector('.show-icon')
+    this.hideEl = this.rootEl.querySelector('.hide-icon')
     const controlsId = this.buttonEl.getAttribute('aria-controls');
     this.faqEl = document.getElementById(controlsId)
 
